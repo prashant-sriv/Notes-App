@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createnote">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbarofcreatenote"
+        android:background="@color/black">
+
+        <EditText
+            android:id="@+id/createtitleofnote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textColorHint="#918484"
+            android:hint="Enter your note title here"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/createcontentofnote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarofcreatenote"
+        android:background="#F8000000"
+        android:gravity="top|left"
+        android:hint="Enter your note content here"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="#918484"
+        android:textSize="15sp">
+    </EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/savenote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_baseline_save_24"
+        android:backgroundTint="#0195F7"
+        app:maxImageSize="40dp" />
+
+    <ProgressBar
+        android:id="@+id/progressbarofcreatenote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#0195F7"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp">
+    </ProgressBar>
+
+</RelativeLayout>

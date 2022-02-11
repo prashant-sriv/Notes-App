@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notesActivity"
+    android:background="@color/black">
+
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/searchview"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_margin="6dp"-->
+<!--        android:background="#594E4E"-->
+<!--        android:layout_width="match_parent"-->
+<!--        app:queryHint="Seach Notes..."-->
+<!--        app:iconifiedByDefault="false"-->
+<!--        android:layout_height="?attr/actionBarSize"/>-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createnotefab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#0195F7"
+        android:foregroundTint="#F8F6F6"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#0E0404"
+        app:maxImageSize="40dp"
+        app:rippleColor="#050505"
+        app:tint="#FAF9F9" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
